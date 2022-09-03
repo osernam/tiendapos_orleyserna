@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 8900
 
 
 app.use('/', require('./routes/index')); 
+app.get('/',  require('./routes/index'));                                                                                                                                                           
 
 app.set('view engine', 'ejs');
 
