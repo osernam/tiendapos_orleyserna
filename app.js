@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
+const enrutador = require('./routes/index');
 const PORT = process.env.PORT || 8900
 
 
-app.use('/', require('./routes/index')); 
-app.get('/',  require('./routes/index'));                                                                                                                                                           
+app.use('/', enrutador); 
+                                                                                                                                                     
 
 app.set('view engine', 'ejs');
 

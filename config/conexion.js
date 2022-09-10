@@ -13,8 +13,6 @@ conexionBaseDatos.connect(uri, parametrosConexion)
     .then(()=> console.log("Base de datos conectada")) //mensaje exitoso
 
     .catch((err) => console.error(err));//muestra el error
-
-
                                                                                                                         
     module.exports={
         conexionBaseDatos
